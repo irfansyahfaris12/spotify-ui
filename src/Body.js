@@ -8,8 +8,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 function Body({ spotify }) {
-  const [{ discover_weekly }, dispatch] = useDataLayerValue();
-  console.log(discover_weekly, "discover");
+  const [{ discover_weekly }] = useDataLayerValue();
+  // console.log(discover_weekly, "discover");
   return (
     <div className="body">
       <Header spotify={spotify} />

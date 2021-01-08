@@ -44,10 +44,10 @@ function App() {
         discover_weekly: response,
       })
     );
-  }, []);
+  }, [dispatch]);
 
-  console.log("ini token", token);
-  console.log(user, "ini user");
+  // console.log("ini token", token);
+  // console.log(user, "ini user");
 
   return <div className="App">{token ? <Player /> : <Login />}</div>;
 }
